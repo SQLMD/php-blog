@@ -2,12 +2,15 @@
     namespace App\Controller;
 
     use App\Controller\AppController;
+  
+
+
 
     class ArticlesController extends AppController
     {
         public function index()
         {
-            $articles = $this->Articles->find('all');
+            $articles = $this->Articles->find('all')->order('created desc');
             $this->set(compact('articles'));
         }
 

@@ -1,0 +1,28 @@
+#article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article-item {
+    width: 80%;
+    border: solid 1px black;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.article-title {
+    font-size: 2em;
+}
+
+.article-time {
+    font-size: 0.5em;
+    text-align: right;
+}
+
+subheader {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
