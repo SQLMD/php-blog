@@ -5,10 +5,6 @@
     <h4>A Coding Journey</h4>
 </subheader>
 
-
-
-
-<!-- <?= $this->Html->link('Add a New Post', ['action'=> 'add']) ?> -->
 <div id="article-container">
     <?php foreach ($articles as $article): ?>
     <div class="article-item">
@@ -22,37 +18,9 @@
         <?= $this->form->postLink(
             'Delete',
             ['action' => 'delete', $article->id],
-            ['confirm' => 'Are you sure'])
+            ['confirm' => 'This is irreversible. Are you sure you want to delete the post "'.$article->title.'" ?'])
         ?>
         <?= $this->Html->link('Edit',['action'=> 'edit', $article->id]) ?>
     </div>
     <?php endforeach; ?>
 </div>
-
-<!-- <table>
-    <tr>
-        <th>Id</th>
-        <th>Title</th>
-        <th>Created</th>
-    </tr>
-
-   
-    <?php foreach ($articles as $article): ?>
-    <tr>
-        <td><?= $article->id ?></td>
-        <td>
-            <?= $this->Html->link($article->title, ['action' => 'view', $article->id]) ?>
-        </td>
-        <td>
-            <?= $article->created->format(DATE_RFC850) ?>
-        </td>
-        <td><?= $this->form->postLink(
-            'Delete',
-            ['action' => 'delete', $article->id],
-            ['confirm' => 'Are you sure'])
-            ?>
-            <?= $this->Html->link('Edit',['action'=> 'edit', $article->id]) ?>
-        </td>
-    </tr>
-    <?php endforeach; ?>
-</table> -->

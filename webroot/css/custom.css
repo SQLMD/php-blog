@@ -26,3 +26,14 @@ subheader {
     margin: 0;
     padding: 0;
 }
+
+#article-add {
+    margin: 0 auto;
+    width: 80%;
+}
+
+button {
+    margin-left: 400px;
+    background-color: steelblue;
+    border-radius: 4px;
+}
