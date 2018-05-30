@@ -45,7 +45,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <div class="top-bar-section">
             <ul class="right">
                 <li><?= $this->Html->link('Add Post', ['action'=> 'add']) ?></li>
-                <li><a target="_blank" href="https://www.github.com/SQLMD">README</a></li>
+                <li><a target="_blank" href="https://github.com/SQLMD/php-blog/blob/master/README.md">README</a></li>
             </ul>
         </div>
     </nav>
