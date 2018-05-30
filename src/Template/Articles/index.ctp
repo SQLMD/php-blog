@@ -4,6 +4,11 @@
     <h1>SQLMD</h1>
     <h4>A Coding Journey</h4>
 </subheader>
+
+
+
+
+<!-- <?= $this->Html->link('Add a New Post', ['action'=> 'add']) ?> -->
 <div id="article-container">
     <?php foreach ($articles as $article): ?>
     <div class="article-item">
@@ -14,20 +19,24 @@
         <div class="article-time">
             <?= $article->created ?>
         </div>
+        <?= $this->form->postLink(
+            'Delete',
+            ['action' => 'delete', $article->id],
+            ['confirm' => 'Are you sure'])
+        ?>
+        <?= $this->Html->link('Edit',['action'=> 'edit', $article->id]) ?>
     </div>
     <?php endforeach; ?>
 </div>
-<hr>
-<?= $this->Html->link('Add Article', ['action'=> 'add']) ?>
-<table>
+
+<!-- <table>
     <tr>
         <th>Id</th>
         <th>Title</th>
         <th>Created</th>
     </tr>
 
-    <!-- Here is where we iterate through our $articles query object, printing out article info -->
-
+   
     <?php foreach ($articles as $article): ?>
     <tr>
         <td><?= $article->id ?></td>
@@ -46,4 +55,4 @@
         </td>
     </tr>
     <?php endforeach; ?>
-</table>
+</table> -->

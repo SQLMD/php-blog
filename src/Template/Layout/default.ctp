@@ -21,7 +21,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?= $cakeDescription ?>:
+        SQLMD
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
@@ -37,13 +37,15 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <nav class="top-bar expanded" data-topbar role="navigation">
         <ul class="title-area large-3 medium-4 columns">
             <li class="name">
-                <h1><a href="/sqlmd/articles/"><?= $this->fetch('title') ?></a></h1>
+                <h1><a href="/sqlmd/articles/">Home</a></h1>
+                <!-- <?= $this->fetch('title') ?> -->
             </li>
+            
         </ul>
         <div class="top-bar-section">
             <ul class="right">
-                <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
-                <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
+                <li><?= $this->Html->link('Add Post', ['action'=> 'add']) ?></li>
+                <li><a target="_blank" href="https://www.github.com/SQLMD">README</a></li>
             </ul>
         </div>
     </nav>
