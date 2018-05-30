@@ -5,7 +5,7 @@
     <h4>A Coding Journey</h4>
 </subheader>
 
-<div id="article-container">
+<div class="article-container">
     <?php foreach ($articles as $article): ?>
     <div class="article-item">
         <div class = "article-title"><?= $this->Html->link($article->title, ['action' => 'view', $article->id]) ?></div>
