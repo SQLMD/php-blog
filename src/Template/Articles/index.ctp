@@ -15,7 +15,7 @@
         <div class="article-time">
             <?= $article->created ?>
         </div>
-        <?= $this->form->postLink(
+        <?= $this->Form->postLink(
             'Delete',
             ['action' => 'delete', $article->id],
             ['confirm' => 'This is irreversible. Are you sure you want to delete the post "'.$article->title.'" ?'])
