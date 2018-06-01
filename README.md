@@ -32,8 +32,21 @@ Without the database you should be able to now view the CakePHP home page at loc
 
 ### Database set up
 
-This application only needs one table. Use this [query][Articles_sql.md]
-You will need to update the datasbase configuration
+This application only needs one table. Use this [query](Articles_sql.md)
+
+You will need to update the datasbase configuration to your instance of MySQL. 
+This configuration is found in config/ap.php
+
+```
+ 'host' => <your_hostname> //localhost/<project_name> if using default
+ 'port' => '3306', //Default port, but yours could be different
+ 'username' => <your_username,
+ 'password' => <your_password>,
+ 'database' => <your_database>,
+```
+
+
+
 
 ### Future Enhancements
 
